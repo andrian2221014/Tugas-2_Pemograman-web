@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perhitungan Segitiga dan Bola</title>
+</head>
+<body>
+    <h1>Perhitungan Menggunakan JavaScript</h1>
+
+    <!-- Bagian 1: Menghitung Luas Segitiga -->
+    <h2>Menghitung Luas Segitiga</h2>
+    <p>Alas: 8 cm, Tinggi: 5 cm</p>
+    <script>
+        var alas = 8;
+        var tinggi = 5;
+        var luas = 0.5 * alas * tinggi;
+        document.write('Luas segitiga adalah: ' + luas + ' cm²<br><br>');
+    </script>
+
+    <!-- Bagian 2: Menghitung Volume Bola -->
+    <h2>Menghitung Volume Bola</h2>
+    <p>Diameter: 15 cm</p>
+    <script>
+        var diameter = 15;
+        var jariJari = diameter / 2;
+        var volume = (4 / 3) * Math.PI * Math.pow(jariJari, 3);
+        document.write('Volume bola adalah: ' + volume.toFixed(2) + ' cm³<br><br>');
+    </script>
+
+    <!-- Bagian 3: Menghitung Sisi Miring Segitiga Siku-Siku -->
+    <h2>Menghitung Sisi Miring Segitiga Siku-Siku</h2>
+    <p>Alas: 4 cm, Tinggi: 5 cm</p>
+    <script>
+        var alasSiku = 4;
+        var tinggiSiku = 5;
+        var sisiMiring = Math.sqrt(Math.pow(alasSiku, 2) + Math.pow(tinggiSiku, 2));
+        document.write('Sisi miring segitiga adalah: ' + sisiMiring.toFixed(2) + ' cm');
+    </script>
+</body>
+</html>
